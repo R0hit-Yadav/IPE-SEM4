@@ -45,6 +45,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
 
+
 // Route to handle file upload
 app.post('/upload', (req, res) => {
     upload(req, res, (err) => {
